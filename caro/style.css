@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+    height: 600px;
+    margin: auto auto;
+
+}
+.child {
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border: 0.5px solid black;
+}
+.child.player {
+    pointer-events: none; /* Ngăn chặn tất cả các sự kiện chuột */
+    opacity: 0.5; /* Làm mờ phần tử để chỉ ra rằng nó không được focus */
+}
+.child.bot {
+    pointer-events: none; /* Ngăn chặn tất cả các sự kiện chuột */
+    opacity: 0.5; /* Làm mờ phần tử để chỉ ra rằng nó không được focus */
+}
